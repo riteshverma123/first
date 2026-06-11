@@ -1,11 +1,7 @@
 {
-  "$schema": "https://railway.app/railway.schema.json",
-  "build": {
-    "builder": "NIXPACKS",
-    "buildCommand": "npm install -g pnpm && pnpm install --no-frozen-lockfile && pnpm run build"
-  },
+  "$schema": "https://railway.com/railway.schema.json",
   "deploy": {
-    "startCommand": "pnpm run start",
+    "startCommand": "node dist/index.js",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
   }
